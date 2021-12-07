@@ -8,6 +8,10 @@
     <title>Midori Shop</title>
 
     <style>
+        body{
+                background:rgb(224, 213, 226)
+            }
+
         table {
           font-family: arial, sans-serif;
           border-collapse: collapse;
@@ -27,7 +31,7 @@
     </head>
 <body>
 
-<h1 style="color: blueviolet;">Welcome to Midori Shop</h1>
+<h1 id="demo-id" style="color: blueviolet;">Welcome to Midori Shop</h1>
 <p>
     <div style="background-color: rgb(231, 228, 238);">       
         <h3> Available Phones:</h3>
@@ -115,5 +119,26 @@
   <input type="submit" value="Submit">
 </form> 
 
+<footer>
+    <p>Midori Shop - Phones, accessories, phone repairs, and more<br>
+        Siegburg <br>
+        Germany <br>
+    <a href="mailto:midori@example.com">midori@example.com</a></p>
+  </footer>
+
+
+
+  <script type="text/javascript">
+
+let headerNodes = document.getElementsByTagName("h1")
+for (let headerNode of headerNodes) {
+    headerNode.classList.toggle("selected")
+}
+
+
+
+
+
+  </script>
 </body>
 </html>
